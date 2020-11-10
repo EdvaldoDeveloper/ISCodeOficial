@@ -20,19 +20,19 @@ module.exports = (app) => {
         }
 
         if(contactEmail == undefined || contactEmail == ""){
-            emailError = "validação nome";
+            emailError = "O endereço de e-mail informado é inválido.";
         }
 
         if(contactFone == undefined || contactFone == ""){
-            foneError = "validação nome";
+            foneError = "O numero de telefone informado é inválido";
         }
 
         if(contactSubject == undefined || contactSubject == ""){
-            subjectError = "validação nome";
+            subjectError = "O campo de assunto informado é inválido";
         }
 
         if(contactMessage == undefined || contactMessage == "" ){
-            messageError = "validação nome";
+            messageError = "O campo de mensagem informado é inválido";
         }
 
         if(nomeError != undefined || emailError != undefined || foneError != undefined || subjectError != undefined || messageError != undefined){
@@ -42,7 +42,7 @@ module.exports = (app) => {
             req.flash("foneError",foneError);
             req.flash("subjectError",subjectError);
             req.flash("messageError",messageError);
-            res.redirect('/#services')
+            res.redirect('/#error')
         }else{
             // res.send("SHOW DE BOLA ESSE DORM")
             ContactMessage.create({

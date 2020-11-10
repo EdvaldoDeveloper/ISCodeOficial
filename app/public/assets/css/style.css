@@ -159,6 +159,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 12px 15px;
   transition: 0.3s;
   font-size: 14px;
+  font-weight: 600;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -365,7 +366,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(13, 30, 45, 0.1);
+  /* background-color: rgba(5, 12, 19, 0.1); */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -397,11 +398,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     height: calc(100vh - 70px);
   }
   #hero p {
-    width: 80%;
+    width: 85%;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
-    background-color: rgba(17, 16, 16, 0.3);
-    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4%;
     color: #fff;
   }
 
@@ -413,20 +414,20 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 800;
+  font-size: 36px;
+  font-weight: 900;
 }
 
 #hero p {
   width: 100%;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1.4;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  background-color: rgba(17, 16, 16, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 2%;
-  color: #fff;
+  color: #444;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -493,22 +494,36 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: #1c5c93;
 }
 
+  
+
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 30px;
+
+  }
+  
+}
+@media (max-width: 768px) {
+  
+  #hero p {
+    width: 100%;
+    font-size: 22px;
+    padding: 4%;
 
   }
   
 }
 
 @media (min-width: 1024px) {
+  
   #hero p {
-    width: 60%;
+    width: 48%;
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General

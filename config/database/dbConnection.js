@@ -6,3 +6,9 @@ const connection = new Sequelize('iscodec1_mensagem', 'iscodec1_devEdvaldo', 'pr
 });
 
 module.exports = connection;
+
+
+// const connection = new Sequelize('iscodec1_mensagem', 'iscodec1_devEdvaldo', 'pr06390721', {
+//     host: 'localhost',
+//     dialect: 'mysql'
+// });
