@@ -504,6 +504,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   
 }
 @media (max-width: 768px) {
+
+  #hero .carousel-item::before {
+    background-color: rgba(5, 12, 19, 0.5);
+  }
   
   #hero p {
     width: 100%;
