@@ -23,8 +23,8 @@ const ContactMessage = connection.define('message', {
         allowNull: false
     }
 });
-ContactMessage.sync({force:false}).then( () => {
-    console.log("Tabela Criada");
-});
+// ContactMessage.sync({force:false}).then( () => {
+//     console.log("Tabela Criada");
+// });
 
 module.exports = ContactMessage;
